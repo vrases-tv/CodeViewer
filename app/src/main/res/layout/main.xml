@@ -1,0 +1,82 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/_coordinator"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<com.google.android.material.appbar.AppBarLayout
+		android:id="@+id/_app_bar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:theme="@style/AppTheme.AppBarOverlay">
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/_toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:background="?attr/colorPrimary"
+			app:popupTheme="@style/AppTheme.PopupOverlay" />
+	</com.google.android.material.appbar.AppBarLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior">
+		<LinearLayout
+			android:id="@+id/linear1"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:padding="8dp"
+			android:orientation="vertical">
+			<EditText
+				android:id="@+id/edittext2"
+				android:layout_width="match_parent"
+				android:layout_height="200dp"
+				android:padding="8dp"
+				android:textSize="12sp"
+				android:textColor="#000000"
+				android:hint="Edit Text"
+				android:textColorHint="#607D8B" />
+			<Button
+				android:id="@+id/button1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="Button"
+				android:textSize="12sp"
+				android:textColor="#000000" />
+			<androidx.core.widget.NestedScrollView
+				android:id="@+id/nestedScrollView1"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:scrollbars="none"
+				android:fillViewport="true"
+				android:overScrollMode="never">
+				<LinearLayout
+					android:id="@+id/linear2"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:orientation="vertical">
+					<com.vrases.sketchyas.codeviewer.CodeViewer
+						android:id="@+id/edittext1"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:textSize="12sp"
+						android:textColor="#000000"
+						android:hint="Edit Text"
+						android:textColorHint="#607D8B"
+						app:theme="dracula"
+						app:language="java"
+						app:enableHighlighting="true"
+						app:enableLineHighlighting="true"
+						app:enableFolding="true"
+						app:typingAnimation="true"
+						app:typingSpeed="2000"
+						app:showLineNumbers="true"
+						app:fixedLineNumbers="false"
+						app:editable="true" />
+				</LinearLayout>
+			</androidx.core.widget.NestedScrollView>
+		</LinearLayout>
+	</LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

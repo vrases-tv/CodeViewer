@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CodeViewer">
+        <attr name="showLineNumbers" format="boolean" />
+        <attr name="fixedLineNumbers" format="boolean" />
+        <attr name="lineNumberPadding" format="dimension" />
+        <attr name="theme" format="enum">
+            <enum name="light" value="0" />
+            <enum name="dark" value="1" />
+            <enum name="monokai" value="2" />
+            <enum name="github" value="3" />
+            <enum name="dracula" value="4" />
+            <enum name="solarizedLight" value="5" />
+            <enum name="solarizedDark" value="6" />
+            <enum name="nord" value="7" />
+            <enum name="nightOwl" value="8" />
+            <enum name="material" value="9" />
+        </attr>
+        <attr name="language" format="string" />
+        <attr name="code" format="string" />
+        <attr name="enableHighlighting" format="boolean" />
+        <attr name="enableLineHighlighting" format="boolean" />
+        <attr name="enableFolding" format="boolean" />
+        <attr name="editable" format="boolean" />
+        <attr name="autoIndent" format="boolean" />
+        <attr name="typingAnimation" format="boolean" />
+        <attr name="typingSpeed" format="integer" />
+    </declare-styleable>
+</resources>
